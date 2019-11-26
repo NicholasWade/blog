@@ -4,12 +4,12 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 
-class Post(unittest.TestCase):
+class AdminPostAndDelete(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
 
-    def test_upgrade(self):
+    def test_add_and_delete_all(self):
         user = "nwade"
         pwd = "Neva3490"
         driver = self.driver
@@ -50,7 +50,6 @@ class Post(unittest.TestCase):
         time.sleep(3)
 
         elem = driver.find_element_by_id("action-toggle").click()
-        #elem = driver.find_element_by_xpath(".//*[contains(text(), 'Post')]").click()
         time.sleep(3)
 
         elem = driver.find_element_by_xpath("/html/body/div/div[3]/div/div/form/div[1]/label/select/option[2]").click()

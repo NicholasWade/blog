@@ -9,7 +9,7 @@ class Post(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
 
-    def test_upgrade(self):
+    def test_post(self):
         user = "nwade"
         pwd = "Neva3490"
         driver = self.driver
